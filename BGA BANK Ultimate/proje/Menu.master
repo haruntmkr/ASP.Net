@@ -1,0 +1,310 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="BireyselMasterPage.master.cs" Inherits="BireyselMasterPage" %>
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta charset="utf-8"/>
+    <title>BGA BANK Ultimate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	<link id="callCss" rel="stylesheet" href="../themes/current/bootstrap.min.css" type="text/css" media="screen"/>
+	<link href="../themes/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+	<link href="../themes/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+	<link href="../themes/css/base.css" rel="stylesheet" type="text/css"/>
+     <link rel="shortcut icon" href="img/logo.png"/>
+	<style type="text/css" id="enject"></style>
+    <script>document.cookie = "PCUSESSIONID=stealme"
+
+    </script>
+
+
+    <script type="text/javascript" language="javascript">
+        function returnumber(evt) {
+            evt = (evt) ? evt : window.event
+            var charCode = (evt.which) ? evt.which : evt.keyCode
+            if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                return false
+            }
+            return true
+        }
+</script>
+    <style>
+	@font-face {
+		font-family: 'TRY';
+		src:url('fonts/TRY.eot');
+		src:url('fonts/TRY.eot?#iefix') format('embedded-opentype'),
+			url('fonts/TRY.woff') format('woff'),
+			url('fonts/TRY.ttf') format('truetype'),
+			url('fonts/TRY.svg#TRY') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+	.simge-tl, .simgetl {
+		font-family: 'TRY';
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+	}
+	.simgetl:before {
+		content: "\20ba";
+	}
+     </style>
+</head>
+<body>
+<section id="headerSection">
+	<div class="container">
+		<div class="navbar">
+			<div class="container">
+				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<h1><a class="brand" href="g_giris.aspx"> BGA <small>  BANK</small></a></h1>
+				<div class="nav-collapse collapse">
+					<ul class="nav pull-right">
+						<li class="active"><a href="g_giris.aspx">Anasayfa	</a></li>
+					
+					
+						
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Hakkımızda<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="elements.html">BGA BANK</a></li>
+								<li><a href="comingsoon.html">İnsan Kaynakları</a></li>
+							</ul>
+						</li>
+						<li class=""><a href="g_gonderi.aspx">İletişim</a></li>
+                        <li class=""><a href="g_logout.aspx">Çıkış</a></li>
+			
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--Header Ends================================================ -->
+<!-- Page banner -->
+<section id="bannerSection" style="background:url(themes/images/banner/blog.png) no-repeat center center #000;">
+	<div class="container" >	
+		<h1 id="pageTitle"> 
+		<span class="pull-right toolTipgroup">
+			<a href="https://www.facebook.com/bgasecurity/?fref=ts" data-placement="top" data-original-title="Find us on via facebook"><img style="width:45px" src="themes/images/facebook.png" alt="facebook" title="facebook"></a>
+			<a href="https://twitter.com/bgasecurity" data-placement="top" data-original-title="Find us on via twitter"><img style="width:45px" src="themes/images/twitter.png" alt="twitter" title="twitter"></a>
+			<a href="https://www.youtube.com/user/bgakademisi" data-placement="top" data-original-title="Find us on via youtube"><img style="width:45px" src="themes/images/youtube.png" alt="youtube" title="youtube"></a>
+		</span>
+		</h1>
+	</div>
+</section> 
+<!-- Page banner end -->
+<section id="bodySection">
+		<div class="container">					
+			
+			
+			
+               
+			 <div class="row" >
+                                    
+                                           
+                                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                                     <!--ContentPlaceHolder-->                     
+                                                </asp:ContentPlaceHolder>
+                                   
+
+            </div>
+                             <!--Kutu başlangıç row-->
+           <div class="row">
+
+                            <div class="span13" >                     
+
+                                                                <div class="span2">
+                                                                         <asp:HyperLink ID="HyperLink6" NavigateUrl="~/g_paratrans.aspx" Font-Underline="false" runat="server">
+				                                 
+				                                                            <div class="well well-small">
+					                                                            <h4 style="margin:-9px -9px -10px">
+					                                                           <i style="width:auto; font-size:2em; line-height:1em; height:auto; color:#FE5214" class="icon-magic" ></i>
+					                                                            <span><br/>EFT <br /> Havale</span>
+					                                                            </a>
+					                                                            </h4>
+					                           
+				                                                            </div>
+                                                                         </asp:HyperLink>
+			                                                         </div>
+                                                                     <div class="span2">
+				                                                         <asp:HyperLink ID="HyperLink5" NavigateUrl="~/g_ayar_ip.aspx" Font-Underline="false" runat="server">
+				                                 
+                                                                            <div class="well well-small">
+					                                                            <h4 style="margin:-9px -9px -10px">
+					                                                            <i style="width:auto; font-size:2em; line-height:1em; height:auto; color:#FE5214" class="icon-magic"></i>
+					                                                            <span><br/>IP <br /> Adreslerim </span>
+					                                                            </a>
+					                                                            </h4>
+					                           
+				                                                            </div>
+                                                                       </asp:HyperLink>
+			                                                         </div>
+                                                                     
+                                                                     <div class="span2">
+                                                                         <asp:HyperLink ID="HyperLink3" NavigateUrl="g_atmbul.aspx" Font-Underline="false" runat="server">
+				                                 
+				                                                            <div class="well well-small">
+					                                                            <h4 style="margin:-9px -9px -10px">
+					                                                            <i style="width:auto; font-size:2em; line-height:1em; height:auto; color:#FE5214" class="icon-magic"></i>
+					                                                            <span><br/>Şube/ATM <br /> Bulucu</span>
+					                                                            </a>
+					                                                            </h4>
+					                                  
+				                                                            </div>
+                                                                          </asp:HyperLink>
+			                                                         </div>
+                                                                     <div class="span2">
+                                                                         <asp:HyperLink ID="HyperLink2" NavigateUrl="g_TLyukle.aspx" Font-Underline="false" runat="server">
+				                                        
+				                                                            <div class="well well-small">
+					                                                            <h4 style="margin:-9px -9px -10px">
+					                                                            <i style="width:auto; font-size:2em; line-height:1em; height:auto; color:#FE5214" class="icon-magic"></i>
+					                                                            <span><br/>Lira <br /> Yükleme </span>
+					                                                            </a>
+					                                                            </h4>
+					                              
+				                                                            </div>
+                                                                             </asp:HyperLink>
+                                              
+    
+			                                                         </div>
+                                              
+                                                                     <div class="span2">
+                                          
+                                                                          <asp:HyperLink ID="HyperLink1" NavigateUrl="~/g_ayar.aspx" Font-Underline="false" runat="server">
+				                                                                <div class="well well-small">
+                                                                                        <h4 style="margin:-9px -9px -10px">
+					                                                                     <i style="width:auto; font-size:2em; line-height:1em; height:auto; color:#FE5214" class="icon-wrench"></i>
+					                                                                    <span><br/>Üye <br /> Ayarları </span>
+					                                                                    </a>
+					                                                                    </h4>
+				                                                                </div>
+                                                                          </asp:HyperLink>
+			                                                         </div>
+                                                        
+                            </div>  <!--span13 bitiş--> 
+           </div>
+                             <!--Kutu bitiş row-->
+               
+			                    
+
+			               
+          
+			                       
+
+		</div>
+
+
+			
+		
+		
+</section>
+ <!-- Footer
+  ================================================== -->
+<section id="footerSection">
+<div class="container">
+    <footer class="footer well well-small">
+	<div class="row-fluid">
+	<div class="span4">
+			<h4>BGA BANK</h4>
+			
+			<em>
+			Latince'de inanma, güven anlamına gelen credere sözcüğünden gelir. Bankalar nakdi kredilerden faiz ve komisyon gelirleri, gayrinakdi kredilerden de verilen garanti ve kefaletin belirli oranlarında komisyon geliri alarak gelir kaydederler.<br/><br/>
+			</em>
+			<h5>Kredi almak istemezmisiniz? Hemde geri ödemesiz...</h5>
+			<em>
+			Kredi sözleşmeleri, konu itibariyle çok yönlü sözleşmelerdir.
+			</em>
+			<br/><br/>
+			
+			
+		</div>
+		<div class="span5">
+		<h4>Hizmetlerimiz</h4>
+		<ul class="media-list">
+		  <li class="media">
+			<div class="media-body">
+			  <h5 class="media-heading"><a href="default.aspx">Kredi Kartı Başvurusu</h5>
+			</div>
+		  </li>
+		  
+		  
+		   <li class="media">
+			<div class="media-body">
+			  <h5 class="media-heading"><a href="default.aspx">Kredi ve Mevduat</h5>
+			  <br/>
+			</div>
+		  </li>
+		  
+		  
+		   <li class="media">
+			<div class="media-body">
+			  <h5 class="media-heading"><a href="default.aspx">Kampanyalar</h5>
+			  <br/>
+			</div>
+		  </li>
+		  
+		  
+		   <li class="media">
+			<div class="media-body">
+			  <h5 class="media-heading"><a href="default.aspx">İnsan Kaynakları</a></h5>
+			  <br/>
+			</div>
+		  </li>
+		</ul>
+		</div>
+	
+	<div class="span3">
+			<h4>İletişim Bilgileri</h4>
+			<address style="margin-bottom:15px;">
+			<strong><a href="g_giris.aspx" title="business"><i class=" icon-home"></i> Bilgi Güvenliği Akademisi </a></strong><br/>
+19 Mayıs Mah. İnönü Cad. Çetinkaya İş Merkezi  <br/>
+				No:92 Kat:4 KADIKÖY/İSTANBUL<br/>
+			</address>
+			Phone: <i class="icon-phone-sign"></i> &nbsp; +90 (216) 474 0038 <br/>
+			Email: <a href="g_iletisim.aspx" title="contact"><i class="icon-envelope-alt"></i> bilgi@bga.com.tr</a><br/>
+			Link: <a href="www.bga.com.tr" title="Business ltd"><i class="icon-globe"></i> www.bga.com.tr</a><br/><br/>
+			
+
+	<h5>Sosyal Medya</h5>	
+	<div style="font-size:2.5em;">
+		<a href="https://www.facebook.com/bgasecurity/?fref=ts" title="" style="display:inline-block; width:1em"> <i class="icon-facebook-sign"> </i> </a> 
+		<a href="https://twitter.com/bgasecurity" title="" style="display:inline-block; width:1em"> <i class="icon-twitter-sign"> </i> </a>
+		
+	</div>
+	</div>
+    </div>
+
+	<p style="padding:18px 0 44px">&copy; 2016, BGA BANK </p>
+	</footer>
+    </div><!-- /container -->
+</section>
+
+<!-- Javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+	<script src="themes/js/jquery-1.8.3.min.js"></script>
+	<script src="themes/js/bootstrap.min.js"></script>
+	<script src="themes/js/bootstrap-tooltip.js"></script>
+    <script src="themes/js/bootstrap-popover.js"></script>
+	<script src="themes/js/business_ltd_1.0.js"></script>
+</body>
+</html>

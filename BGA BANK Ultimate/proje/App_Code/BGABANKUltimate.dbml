@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BGABANKUltimate" Class="BGABANKUltimateDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=Lenovo;Initial Catalog=BGABANKUltimate;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="BGABANKUltimateConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.haberler" Member="haberlers">
+    <Type Name="haberler">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="haber_baslik" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="haber_detay" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="haber_foto_link" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="haber_link" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="haber_foto_yol" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.kartlar" Member="kartlars">
+    <Type Name="kartlar">
+      <Column Name="k_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="mid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="numara" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="sifre" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="cvc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="bitis_tarihi" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="alim_tarihi" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.kredi_istek" Member="kredi_isteks">
+    <Type Name="kredi_istek">
+      <Column Name="kre_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="mid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="miktar" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="mesaj" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.subeler" Member="subelers">
+    <Type Name="subeler">
+      <Column Name="s_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ad" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="adres" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="tip" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="durum" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.hareketler" Member="hareketlers">
+    <Type Name="hareketler">
+      <Column Name="h_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="mid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="para1" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="para2" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="aciklama" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="tarih" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="hno" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="hno2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.iletisim_formu_mesajlari" Member="iletisim_formu_mesajlaris">
+    <Type Name="iletisim_formu_mesajlari">
+      <Column Name="mesaj_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="adsoyad" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="mesaj" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="tarih" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ayarlar" Member="ayarlars">
+    <Type Name="ayarlar">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="hno" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ip_dogrula" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="mail_dogrula" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IP" Member="IPs">
+    <Type Name="IP">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="hno" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IP" Member="IP1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.girisler" Member="girislers">
+    <Type Name="girisler">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="hno" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="tarih" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="tarayici_bilgisi" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="IP" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.musteri" Member="musteris">
+    <Type Name="musteri">
+      <Column Name="mid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="hno" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ad" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="soyad" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="sifre" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="hesap" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="adres" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="tel" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="musteri_tipi" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="erisim_hak" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="plaka" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="firma" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

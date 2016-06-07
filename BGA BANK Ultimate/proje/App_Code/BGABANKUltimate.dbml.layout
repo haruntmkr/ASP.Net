@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 12, 9.375" name="BGABANKUltimate">
+  <DataContextMoniker Name="/BGABANKUltimateDataContext" />
+  <nestedChildShapes>
+    <classShape Id="b4fa7d7f-c83f-40c6-adec-c9121ba7ff7b" absoluteBounds="2.625, 0.5, 2, 1.9631982421875">
+      <DataClassMoniker Name="/BGABANKUltimateDataContext/haberler" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ed924473-d8b1-4e45-b4ce-5cee7fc826a8" absoluteBounds="2.64, 0.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6408df75-2bed-471a-94ba-3855f1fa841c" absoluteBounds="1.75, 5.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/BGABANKUltimateDataContext/kartlar" />
+      <nestedChildShapes>
+        <elementListCompartment Id="867750c7-a4a3-4cef-a695-02cf7bd987fb" absoluteBounds="1.7650000000000001, 6.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2a4ac77d-1be2-4c9a-bbb8-0f7cd67a76ff" absoluteBounds="7.375, 3.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BGABANKUltimateDataContext/kredi_istek" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4842330e-8af1-417f-959c-2a7bead1b29e" absoluteBounds="7.39, 3.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5ac14931-8f8f-4d5e-8fff-0c2a4eb16c5e" absoluteBounds="9.75, 0.75, 2, 1.7708968098958329">
+      <DataClassMoniker Name="/BGABANKUltimateDataContext/subeler" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b6c5ea34-1e22-4875-a30f-901ffa87fbf6" absoluteBounds="9.765, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0301456d-efed-401f-8b8e-c5b8a8aaf610" absoluteBounds="0.625, 1.125, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/BGABANKUltimateDataContext/hareketler" />
+      <nestedChildShapes>
+        <elementListCompartment Id="529fdf2c-3782-45ee-bb48-a2feb480edb3" absoluteBounds="0.63999999999999968, 1.585, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f9fd3c1c-980d-4c33-a38b-ca006b6d248c" absoluteBounds="0.875, 3.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BGABANKUltimateDataContext/iletisim_formu_mesajlari" />
+      <nestedChildShapes>
+        <elementListCompartment Id="50f0189b-8b9c-442a-8cc7-b02adf58ef6c" absoluteBounds="0.89000000000000012, 4.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f4c6d5e6-4ffb-4393-9b46-bfdd4c9e3926" absoluteBounds="4.75, 2.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BGABANKUltimateDataContext/ayarlar" />
+      <nestedChildShapes>
+        <elementListCompartment Id="81f106c5-07aa-4f84-a14a-6c74cd738376" absoluteBounds="4.765, 2.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1aff4639-4910-4675-8f78-0b00e6f51fd8" absoluteBounds="4.375, 5.375, 2, 1.3862939453125">
+      <DataClassMoniker Name="/BGABANKUltimateDataContext/IP" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bc2df8b6-30ff-4a4d-8644-f796679fd98b" absoluteBounds="4.39, 5.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b3b56ac5-fdae-48ae-b32e-1ebb6c43f380" absoluteBounds="7.25, 1.125, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/BGABANKUltimateDataContext/girisler" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7c7c9d57-ba8a-4cfc-a72f-b0faa879e0c6" absoluteBounds="7.265, 1.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9dbf3227-c216-4d48-b779-33e756e9913c" absoluteBounds="7.625, 5.875, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/BGABANKUltimateDataContext/musteri" />
+      <nestedChildShapes>
+        <elementListCompartment Id="48fb8fe2-5fff-42e1-8bbb-f8b1e739b154" absoluteBounds="7.64, 6.335, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
