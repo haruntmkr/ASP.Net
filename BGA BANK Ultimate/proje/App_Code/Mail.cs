@@ -21,13 +21,13 @@ public class Mail
         sc.Port = 587;
         sc.Host = "smtp.gmail.com";
         sc.EnableSsl = true;
-        sc.Credentials = new NetworkCredential("bgabankultimate@gmail.com", "md5libgabank");
+        sc.Credentials = new NetworkCredential("", "");
         return sc;
     }
     private MailMessage MailMessageOlustur(string icerik, string eposta, string konu)
     {
         MailMessage mail = new MailMessage();
-        mail.From = new MailAddress("bgabankultimate@gmail.com", "BGABANK ULTIMATE");
+        mail.From = new MailAddress("", "");
         mail.To.Add(eposta);
         mail.Subject = konu;
         mail.IsBodyHtml = true;
@@ -46,11 +46,11 @@ public class Mail
         sc.Port = 587;
         sc.Host = "smtp.gmail.com";
         sc.EnableSsl = true;
-        sc.Credentials = new NetworkCredential("bgabankultimate@gmail.com", "md5libgabank");
+        sc.Credentials = new NetworkCredential("", "");
 
         MailMessage mail = new MailMessage();
 
-        mail.From = new MailAddress("bgabankultimate@gmail.com", "BGABANK ULTIMATE");
+        mail.From = new MailAddress("", "");
 
         mail.To.Add(eposta);
 
@@ -70,11 +70,11 @@ public class Mail
         sc.Port = 587;
         sc.Host = "smtp.gmail.com";
         sc.EnableSsl = true;
-        sc.Credentials = new NetworkCredential("bgabankultimate@gmail.com", "md5libgabank");
+        sc.Credentials = new NetworkCredential("", "");
 
         MailMessage mail = new MailMessage();
 
-        mail.From = new MailAddress("bgabankultimate@gmail.com", "BGABANK ULTIMATE");
+        mail.From = new MailAddress("", "");
 
         mail.To.Add(eposta);
 
